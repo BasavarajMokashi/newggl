@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html ng-controller="fileUpload" ng-app="fupApp">
+<head>
+  <title>AngularJS File Upoad Example with $http and FormData</title>
+   <link data-require="bootstrap-css@*" data-semver="3.3.1" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.js"></script>
+    <script src="https://cdn.rawgit.com/SheetJS/js-xlsx/v0.8.0/dist/xlsx.full.min.js"></script>
+    <script src="https://cdn.rawgit.com/SheetJS/js-xlsx/v0.8.0/dist/ods.js"></script>
+    <script src="http://cdn.rawgit.com/angular-ui/ui-grid.info/gh-pages/release/3.0.0-rc.22/ui-grid.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.rawgit.com/angular-ui/ui-grid.info/gh-pages/release/3.0.0-rc.22/ui-grid.min.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="app.js"></script>
+  
+</head>
+
+<div class="container" >
+		<div class="row">
+          <div class="heading search-txt text-center col-sm-8 col-sm-offset-2">
+            <h2>Class Bulk  Upload</h2>
+          </div>
+        </div>
+      <div class="row">
+			
+			<div class="col-md-12">
+				
+				 <p id="bulk_student_errormsg" ng-class="result"></p>
+			</div>
+			
+			<div class="col-md-4">
+				<div class="fileUpload btn btn-success btn-block">
+					<span>Select  File</span>
+				
+					
+					  <input type="file" accept=".xls,.xlsx,.ods" fileread="" multiple="false" class="upload" opts="gridOptions"/>
+				</div>
+				
+			</div>
+			
+			
+			<div class="col-md-4">
+			  <div class="input-group">
+                 <button type="button" class="btn btn-success" ng-click="submitexcel()">Submit Excel</button>
+            </div>
+			</div>
+           
+        </div>  <br>        
+      </div>

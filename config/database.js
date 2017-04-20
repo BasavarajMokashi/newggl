@@ -1,10 +1,10 @@
 module.exports = {
     remote : {
     	connectionLimit : 100, //important
-	    host	 : 'localhost', // Production.
-	  	user     : 'basavara_elearn',
-	  	password : 'J&I@%*0&U@)Z',
-	  	database : 'basavara_elearning',
+	    host	 : '104.197.182.19', // Production.
+	  	user     : 'root',
+	  	password : 'root',
+	  	database : 'ggldb',
 	  	debug	 : false
 	},
     localhost : {

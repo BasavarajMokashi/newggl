@@ -17,7 +17,7 @@ var fs = require('fs');
 var Q = require('q');
 
 /*Set server port and project path*/
-app.set('port', (process.env.PORT || 3000));
+app.set('port', (process.env.PORT || 8080));
 // set the static files location /public/img will be /img for users
 app.use(express.static('./public/'));
 app.use(express.static('apps'));
@@ -33,7 +33,6 @@ app.use(fileUpload());
 // routes ======================================================================
 require('./app/routes.js')(app);
 
-//Starlly Constants
 app.constants = AppConstants.Constants;
 
 //Establish MySql DB Pool Connections
